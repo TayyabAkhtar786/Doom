@@ -1,0 +1,8 @@
+# DOOM - Web Vulnerability Scanner
+# Install with: pip install -r requirements.txt
+
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+colorama>=0.4.6
+fpdf2>=2.7.0
+pyfiglet>=1.0.2
