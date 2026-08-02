@@ -96,8 +96,8 @@ Built for the Offensive Security module by **Tayyab Akhtar**.
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/tayyabakhtar/doom-scanner.git
-cd doom-scanner
+git clone https://github.com/tayyabakhtar786/Doom.git
+cd DOOM
 ```
 
 ### Step 2 — Install dependencies
