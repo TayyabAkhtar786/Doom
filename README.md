@@ -318,7 +318,6 @@ The generated PDF includes:
 > CFAA (USA), and equivalent laws worldwide.
 
 ---
-
 <div align="center">
 
 Made with ❤️ by **Tayyab Akhtar**
