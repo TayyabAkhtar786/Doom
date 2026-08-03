@@ -209,40 +209,80 @@ Each check:
 
 ## Sample Output
 
-```
+```text
 ██████╗  ██████╗  ██████╗ ███╗   ███╗
-...
+██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║
+██║  ██║██║   ██║██║   ██║██╔████╔██║
+██║  ██║██║   ██║██║   ██║██║╚██╔╝██║
+██████╔╝╚██████╔╝╚██████╔╝██║ ╚═╝ ██║
+╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚═╝
 
 ════════════════════════════════════════════════════════════════
-  Developer    : Tayyab Akhtar
-  Version      : 3.0.0
-  Module       : Full DVWA Vulnerability Scanner
-  Status       : Enterprise Professional Edition
+                     DOOM v3.0.0
+        Enterprise Web Vulnerability Scanner
 ════════════════════════════════════════════════════════════════
 
-[*] Initializing DOOM engine... OK
-[*] Loading attack payloads... OK
-[*] Mapping DVWA modules... OK
-[*] Preparing scan environment... OK
+Developer    : Tayyab Akhtar
+Version      : 3.0.0
+Target       : http://localhost
+Module       : Full DVWA Vulnerability Scanner
+Status       : Enterprise Professional Edition
+
+────────────────────────────────────────────────────────────────
+
+[*] Initializing DOOM engine...             OK
+[*] Loading attack payloads...              OK
+[*] Mapping DVWA modules...                 OK
+[*] Preparing scan environment...           OK
+
+────────────────────────────────────────────────────────────────
 
 [+] Attempting automated DVWA authentication...
 [+] Authentication successful
-[+] Security level set to: low
+[+] Security level set to: LOW
 [+] Starting comprehensive scan of http://localhost
 
+────────────────────────────────────────────────────────────────
+
 [✶] Scanning SQL Injection...
-[!] VULNERABILITY FOUND: SQL Injection at /dvwa/vulnerabilities/sqli/
+[!] VULNERABILITY FOUND
+    Severity : CRITICAL
+    Endpoint : /dvwa/vulnerabilities/sqli/
 
 [✸] Scanning Command Injection...
-[!] VULNERABILITY FOUND: Command Injection at /dvwa/vulnerabilities/exec/
+[!] VULNERABILITY FOUND
+    Severity : CRITICAL
+    Endpoint : /dvwa/vulnerabilities/exec/
 
-...
+[✷] Scanning Stored XSS...
+[!] VULNERABILITY FOUND
+    Severity : HIGH
+    Endpoint : /dvwa/vulnerabilities/xss_s/
 
-═══════════════════════════════════════════════════════════
-Scan completed! 6 vulnerabilities discovered
-Threat Score: 8.9/10.0
-Report saved to: DOOM_Report_20260802_120000.pdf
-═══════════════════════════════════════════════════════════
+[✹] Scanning Local File Inclusion...
+[!] VULNERABILITY FOUND
+    Severity : HIGH
+    Endpoint : /dvwa/vulnerabilities/fi/
+
+[✺] Scanning Reflected XSS...
+[!] VULNERABILITY FOUND
+    Severity : HIGH
+    Endpoint : /dvwa/vulnerabilities/xss_r/
+
+[✻] Scanning CSRF...
+[!] VULNERABILITY FOUND
+    Severity : MEDIUM
+    Endpoint : /dvwa/vulnerabilities/csrf/
+
+────────────────────────────────────────────────────────────────
+
+Scan completed successfully.
+
+Findings      : 6
+Threat Score  : 8.9 / 10.0
+Report        : DOOM_Report_20260802_120000.pdf
+
+════════════════════════════════════════════════════════════════
 ```
 
 ---
