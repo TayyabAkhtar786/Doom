@@ -36,7 +36,6 @@
 - [How It Works](#how-it-works)
 - [Sample Output](#sample-output)
 - [PDF Report](#pdf-report)
-- [Project Structure](#project-structure)
 - [Disclaimer](#disclaimer)
 
 ---
@@ -302,22 +301,6 @@ The generated PDF includes:
   - CWE and OWASP references
 
 ---
-
-## Project Structure
-
-```
-doom-scanner/
-├── doom.py              # Main scanner (single file)
-├── requirements.txt     # Python dependencies
-├── README.md            # This file
-├── LICENSE              # MIT License
-├── CHEATSHEET.md        # Quick flag reference
-├── INTERNALS.md         # Architecture and how-to-extend guide
-├── docs/
-│   └── report_sample.md # Sample report structure description
-└── tests/
-    └── test_doom.py     # Basic unit tests
-```
 
 ---
 
